@@ -1,0 +1,32 @@
+{% layout 'layout.liquid' %}
+
+{% block content %}
+
+<div class="container-md">
+    <form action="/users/login" method="POST">
+        <fieldset>
+            <legend>Welcome Back, please log in here</legend>
+            <label class="form-label">Username:</label>
+            <input 
+                type="text" 
+                placeholder="username" 
+                name="username"
+                class="form-control"
+            >
+            <label class="form-label">Password:</label>
+            <input 
+                type="password" 
+                placeholder="password" 
+                name="password"
+                class="form-control"
+            >
+        </fieldset>
+            <input 
+                type="submit" 
+                value="Log in" 
+                class="btn btn-success"
+            >
+    </form>
+</div>
+
+{% endblock %}
